@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style>
+            p{
+                color: aliceblue;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: larger;
+            }
+            a{
+                font-size: larger;
+                padding: 10px;
+                color: cyan;
+            }
+            a:hover{
+                color: limegreen;
+                font-size:20px ;
+            }
+            img {
+                text-align: center;
+            }
+            button{
+                text-align: left;
+            }
+            form:hover{
+                font-size: larger;
+                color: chartreuse;
+                border: darkgray;
+                border-style: double;
+            }
+        
+            body{
+                background: grey;
+            }
+            table{
+                background-color: darkslategray;
+                border: dashed;
+                border-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body id="body" >
+        <table border="2" style="border-style: dotted;border-color: chartreuse; width: 100%;height: 100%; " ><tr><td>
+
+               <!--እነዚህ የመጀመሪያዎቹ ሁለት በተኖች የቦዲውን background color ለመቀየር የተሰሩ ናቸው።-->
+               <button type="button"
+               onclick="getElementById('body').style='background-color:black'" style="background-color: black;color:white;" >bg color</button>
+              <button type="button"
+              onclick="getElementById('body').style='background-color:darkgray'" style="background-color:darkgray;color: black;" >bg color</button>
+              <table border="2" style="padding: 5px; border-color: tomato;border-style: double; " >
+                <h1 style="color: blue;">comment</h1>
+                <tr><td> <a href="home.html">home</a></td>
+                <td> <a href="about us.html">about us</a></td>
+                <td> <a href="services.html">services</a></td>
+                 <td><a href="contact us.html">contact us</a></td>
+                 <td><a href="comment.html">comment</a></td>
+         </tr></table>
+          <form name="form" action="">
+            date:<input type="datetime-local"> <br><br>
+           First Name:<input type="text"  name="fn"><br><br>
+           Last Name:<input type="text"  name='ln'><br><br>
+           Email:<input type="email" name="email"><br><br>
+           Phone number:<input type="number"><br><br>
+           male:<input type="radio" name="sex"> 
+           female:<input type="radio" name="sex" style="font-size: xx-small;" >  
+           <br><br>
+            <textarea name="comment" id="" cols="40" rows="10">write your comment here!</textarea><br><br>
+            <button type="submit" style="background-color:black;color: limegreen;" >submit</button>
+        </form>
+        </td></tr></table>
+    </body>
+</html>
